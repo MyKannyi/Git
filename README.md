@@ -1,6 +1,6 @@
 ## GitHub的仓库初始化
 
-```
+```bash
 cd D:/LocalRepository
 mkdir Git #创建一个名叫Git的文件夹
 cd Git
@@ -20,7 +20,7 @@ git config --global --list #查看配置信息
 
 ![](Images/4.png)
 
-```
+```bash
 git remote add Git git@github.com:MyKannyi/Git.git #add一个已经存在的仓库到我们的远程仓库，Git是远程仓库的一个代号，不一定要使用Git这个单词
 cd D:/LocalRepository/Git #使用命令时必须处于该仓库的路径下！
 git remote #验证远程仓库是否添加成功
@@ -51,7 +51,7 @@ cat Git_id_rsa.pub #查看公钥里面有什么内容
 
 ![](Images/8.png)
 
-```
+```bash
 ssh -T git@github.com #测试一下本地和远程的GitHub是否能成功建立连接
 
 #操作：输入yes（如果有的话）
@@ -72,7 +72,7 @@ git push -u Git master #push一个已经存在的仓库到我们的远程仓库
 
 ![](Images/9.png)
 
-```
+```bash
 pwd #查看当前在什么路径下面
 cd .. #返回上级目录
 git clone git@github.com:MyKannyi/Go-000.git #将fork后的仓库clone到本地，千万不要在一个已存在的Git仓库中使用git clone命令！
@@ -106,7 +106,7 @@ cat Go-000_id_rsa.pub #查看公钥里面有什么内容
 
 ![](Images/12.png)
 
-```
+```bash
 ssh -T git@github.com #测试一下本地和远程的GitHub是否能成功建立连接
 ```
 
@@ -114,7 +114,7 @@ ssh -T git@github.com #测试一下本地和远程的GitHub是否能成功建立
 
 ## 将本地库上传到远程库
 
-```
+```bash
 cd D:/LocalRepository/Git
 git status #查看是否有新东西要提交
 git add .
@@ -126,7 +126,7 @@ git push -u Git master
 
 ## 关键操作示例
 
-```
+```bash
 cd D:/LocalRepository/Git
 git status #查看是否有新东西要提交
 pwd #查看当前目录
@@ -154,16 +154,16 @@ clear #清屏
 
 ## 其他操作
 
-```
+```bash
 git pull origin master #将远程主机的master分支最新内容拉下来，并与本地分支进行合并
 ```
 
-```
+```bash
 git remote #查看当前的远程仓库
 git remote rm Git #移除远程仓库Git
 git remote #再次查看，发现远程仓库Git被移除
 ```
 
-```
+```bash
 git push -f origin master #它会忽略版本不一致等问题，强制将本地库上传到远程库，远程库将会被本地库覆盖，慎用！
 ```
