@@ -26,8 +26,7 @@ cd D:/LocalRepository/Git #使用命令时必须处于该仓库的路径下！
 git remote #验证远程仓库是否添加成功
 ssh-keygen -t rsa -C "kannyi@foxmail.com"
 
-#操作：一般除了保存key的文件名需要自己设置外，剩下的操作只需要一直回车即可，此处我设置为
-/c/Users/Kannyi/.ssh/Git_id_rsa
+#操作：一般除了保存key的文件名需要自己设置外，剩下的操作只需要一直回车即可，我设置的文件名见下图
 
 cd /c/Users/kannyi/.ssh
 ls
@@ -82,7 +81,7 @@ git remote add Go-000 git@github.com:MyKannyi/Go-000.git
 git remote #验证远程仓库是否添加成功
 ssh-keygen -t rsa -C "kannyi@foxmail.com"
 
-#操作：一般除了保存key的文件名需要自己设置外，剩下的操作只需要一直回车即可，此处我设置为/c/Users/Kannyi/.ssh/Go-000_id_rsa
+#操作：一般除了保存key的文件名需要自己设置外，剩下的操作只需要一直回车即可，我设置的文件名见下图
 
 cd /c/Users/kannyi/.ssh
 ls
@@ -109,6 +108,18 @@ cat Go-000_id_rsa.pub #查看公钥里面有什么内容
 
 ```
 ssh -T git@github.com #测试一下本地和远程的GitHub是否能成功建立连接
+```
+
+
+
+## 将本地库上传到远程库
+
+```
+cd D:/LocalRepository/Git
+git status #查看是否有新东西要提交
+git add .
+git commit -m "Update"
+git push -u Git master
 ```
 
 
