@@ -12,11 +12,11 @@ git config --global user.email "kannyi@foxmail.com"
 git config --global --list #查看配置信息
 ```
 
-去GitHub上创建一个新的repository：
+**去GitHub上创建一个新的repository：**
 
 ![](Images/3.png)
 
-选择SSH：
+**选择SSH：**
 
 ![](Images/4.png)
 
@@ -36,15 +36,15 @@ cat id_rsa.pub #查看公钥里面有什么内容
 
 ![](Images/5.png)
 
-进入Settings：
+**进入Settings：**
 
 ![](Images/6.png)
 
-创建新的SSH key：
+**创建新的SSH key：**
 
 ![](Images/7.png)
 
-粘贴公钥的内容：
+**粘贴公钥的内容：**
 
 ![](Images/8.png)
 
