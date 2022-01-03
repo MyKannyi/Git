@@ -119,7 +119,7 @@ cd D:/LocalRepository/Git
 git status #查看是否有新东西要提交
 git add .
 git commit -m "Update"
-git push -u Git master
+git push -u Git master #有些仓库的branch可能不叫master，比如叫main
 ```
 
 
@@ -167,3 +167,20 @@ git remote #再次查看，发现远程仓库Git被移除
 ```bash
 git push -f origin master #它会忽略版本不一致等问题，强制将本地库上传到远程库，远程库将会被本地库覆盖，慎用！
 ```
+
+
+
+## Debug
+
+1. git@github.com: Permission denied (publickey).
+
+```bash
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa #id_rsa改为相应的rsa文件名，下同
+
+#此时会出现：Could not open a connection to your authentication agent.
+
+ssh-agent bash
+ssh-add ~/.ssh/id_rsa
+```
+
