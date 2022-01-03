@@ -28,19 +28,19 @@ git commit -m "Version 1.0" #提交更新并加上注释
 clear #清屏
 ```
 
-![](.\Images\1.png)
+![](Images/1.png)
 
-![](.\Images\2.png)
+![](Images/2.png)
 
 
 
 去GitHub上创建一个新的repository：
 
-![](.\Images\3.png)
+![](Images/3.png)
 
 选择SSH：
 
-![](.\Images\4.png)
+![](Images/4.png)
 
 
 
@@ -58,21 +58,21 @@ cat id_rsa.pub #查看公钥里面有什么内容
 #操作：复制公钥的内容
 ```
 
-![](.\Images\5.png)
+![](Images/5.png)
 
 
 
 进入Settings：
 
-![](.\Images\6.png)
+![](Images/6.png)
 
 创建新的SSH key：
 
-![](.\Images\7.png)
+![](Images/7.png)
 
 粘贴公钥的内容：
 
-![](.\Images\8.png)
+![](Images/8.png)
 
 
 
