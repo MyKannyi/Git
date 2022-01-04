@@ -60,7 +60,7 @@ cd D:/LocalRepository/Git #成功通过认证后，返回我们的Git仓库
 git push -u Git master #push一个已经存在的仓库到我们的远程仓库
 ```
 
-
+</br>
 
 ## Fork他人仓库
 
@@ -110,7 +110,7 @@ cat Go-000_id_rsa.pub #查看公钥里面有什么内容
 ssh -T git@github.com #测试一下本地和远程的GitHub是否能成功建立连接
 ```
 
-
+<br/>
 
 ## 将本地库上传到远程库
 
@@ -122,7 +122,7 @@ git commit -m "Update"
 git push -u Git master #有些仓库的branch可能不叫master，比如叫main
 ```
 
-
+<br/>
 
 ## 关键操作示例
 
@@ -150,7 +150,7 @@ clear #清屏
 
 ![](Images/2.png)
 
-
+<br/>
 
 ## 其他操作
 
@@ -168,7 +168,7 @@ git remote #再次查看，发现远程仓库Git被移除
 git push -f origin master #它会忽略版本不一致等问题，强制将本地库上传到远程库，远程库将会被本地库覆盖，慎用！
 ```
 
-
+<br/>
 
 ## Debug
 
